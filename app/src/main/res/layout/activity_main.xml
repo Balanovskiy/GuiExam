@@ -6,11 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.ybalanovskiy.guiexam.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="228dp"
-        android:layout_height="281dp"
-        app:srcCompat="@drawable/prev3"
-        tools:layout_editor_absoluteY="87dp"
-        tools:layout_editor_absoluteX="78dp" />
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="228dp"
+            android:layout_height="281dp"
+            app:srcCompat="@drawable/prev3"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="-23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/CloseActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Activity"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="368dp"
+            android:layout_above="@+id/ExitApplycation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="29dp" />
+
+        <Button
+            android:id="@+id/ExitApplycation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit Applycation"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="423dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp" />
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
